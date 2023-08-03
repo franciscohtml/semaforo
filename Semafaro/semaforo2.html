@@ -1,0 +1,73 @@
+<html>
+    <body>
+    
+        <p id="cor"></p>
+        <p id="segundos"></p>
+    
+        <img id="MinhaImagem" src="verde.png" style="width: 400px;">
+        <img id="MinhaImagem2" src="vermelho.png" style="width: 400px;">
+    
+        <script>
+            var tempo = 2000;
+            var timer = setInterval(controle, tempo);
+            var tempo2 = 2000;
+            var timer2 = setInterval(controle2, tempo2);
+            var img = document.querySelector("#MinhaImagem");
+            var img = document.querySelector('#MinhaImagem2');
+            var semaforo = "verde";
+            var semaforo2 = "vermelho";
+    
+            function controle(){
+    
+                if(semaforo == "verde"){
+                    img.setAttribute('src', 'amarelo.png');
+                    semaforo = "amarelo";
+                    tempo = 2000;
+                }
+    
+            else{
+                if(semaforo == "amarelo"){
+                    img.setAttribute('src', 'vermelho.png');
+                    semaforo = "vermelho";
+                    tempo = 2000;
+                }
+    
+                else{
+    
+                if(semaforo == "vermelho"){
+                    img.setAttribute('src', 'verde.png');
+                    semaforo = "verde";
+                    tempo = 1000;
+                }
+                }
+            }
+            }
+
+            function controle2(){
+    
+    if(semaforo2 == "vermelho"){
+        img.setAttribute('src', 'verde.png');
+        semaforo2 = "verde";
+        tempo2 = 2000;
+    }
+
+else{
+    if(semaforo2 == "verde"){
+        img.setAttribute('src', 'amarelo.png');
+        semaforo2 = "amarelo";
+        tempo2 = 2000;
+    }
+
+    else{
+
+    if(semaforo2 == "amarelo"){
+        img.setAttribute('src', 'vermelho.png');
+        semaforo2 = "vermelho";
+        tempo2 = 1000;
+    }
+    }
+}
+}
+    
+        </script>
+</html>
