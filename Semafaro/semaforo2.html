@@ -1,28 +1,30 @@
 <html>
 <head></head>
 
-<body>
+
+<body background="estrada.jpg">
+
 	
 	<table>
 		<tr><td>
 <p id="botao1"></p>
 <p id="segundos1"></p>
-<img id="MinhaImagem1" src="verde.png" style="width:400px">
+<img id="MinhaImagem1" src="verde2.png" style="width:300px">
 			</td>
 			<td>
 <p id="botao2"></p>
 <p id="segundos2"></p>
-<img id="MinhaImagem2" src="amarelo.png" style="width:400px">
+<img id="MinhaImagem2" src="amarelo2.png" style="width:300px">
 			</td>
 			<td>
 <p id="botao3"></p>
 <p id="segundos3"></p>
-<img id="MinhaImagem3" src="vermelho.png" style="width:400px">
+<img id="MinhaImagem3" src="amarelo2.png" style="width:300px">
 			</td>
 			<td>
 <p id="botao4"></p>
 <p id="segundos4"></p>
-<img id="MinhaImagem4" src="vermelho.png" style="width:400px">
+<img id="MinhaImagem4" src="amarelo2.png" style="width:300px">
 			</td>
 	</tr>
 </table>
@@ -50,22 +52,22 @@ var semaforo4 = "verde";
 
 function controle1(){
 			if (semaforo1 == "verde" ){
-			img1.setAttribute('src', 'amarelo.png');
+			img1.setAttribute('src', 'amarelo2.png');
 			semaforo1 = "amarelo1";
 			tempo1 = 1000;
 			}else{
 			if (semaforo1 == "amarelo1" ){
-			img1.setAttribute('src', 'vermelho.png');
+			img1.setAttribute('src', 'vermelho2.png');
 			semaforo1 = "vermelho";
 			tempo1 = 5000;
 			}	else{
 
 				if (semaforo1 == "vermelho" ){
-			img1.setAttribute('src', 'amarelo.png');
+			img1.setAttribute('src', 'amarelo2.png');
 			semaforo1 = "amarelo2";
 			tempo1 = 1000;
 			}else{if (semaforo1 == "amarelo2" ){
-			img1.setAttribute('src', 'verde.png');
+			img1.setAttribute('src', 'verde2.png');
 			semaforo1 = "verde";
 			tempo1 = 5000;} 
 			}}}
@@ -79,51 +81,51 @@ function controle1(){
 
 function controle2(){
 			if (semaforo2 == "verde" ){
-			img2.setAttribute('src', 'amarelo.png');
+			img2.setAttribute('src', 'amarelo2.png');
 			semaforo2 = "amarelo1";
 			tempo2 = 1000;
 			}else{
 			if (semaforo2 == "amarelo1" ){
-			img2.setAttribute('src', 'vermelho.png');
+			img2.setAttribute('src', 'vermelho2.png');
 			semaforo2 = "vermelho";
 			tempo2 = 5000;
 			}	else{
 
 				if (semaforo2 == "vermelho" ){
-			img2.setAttribute('src', 'amarelo.png');
+			img2.setAttribute('src', 'amarelo2.png');
 			semaforo2 = "amarelo2";
 			tempo2 = 1000;
 			}else{if (semaforo2 == "amarelo2" ){
-			img2.setAttribute('src', 'verde.png');
+			img2.setAttribute('src', 'verde2.png');
 			semaforo2 = "verde";
 			tempo2 = 5000;} 
 			}}}
 				incluiSemaforo2();
 			}
 
-			function incluiSemaforo2(){
+			function incluiSemaforo2(){Semaforo1
 			document.getElementById("botao2").innerHTML = semaforo2;
 			document.getElementById("segundos2").innerHTML = tempo2;
 }
 
 function controle3(){
 			if (semaforo3 == "verde" ){
-			img3.setAttribute('src', 'amarelo.png');
+			img3.setAttribute('src', 'amarelo2.png');
 			semaforo3 = "amarelo1";
 			tempo3 = 1000;
 			}else{
 			if (semaforo3 == "amarelo1" ){
-			img3.setAttribute('src', 'vermelho.png');
+			img3.setAttribute('src', 'vermelho2.png');
 			semaforo3 = "vermelho";
 			tempo3 = 5000;
 			}	else{
 
 				if (semaforo3 == "vermelho" ){
-			img3.setAttribute('src', 'amarelo.png');
+			img3.setAttribute('src', 'amarelo2.png');
 			semaforo3 = "amarelo2";
 			tempo3 = 1000;
 			}else{if (semaforo3 == "amarelo2" ){
-			img3.setAttribute('src', 'vermelho.png');
+			img3.setAttribute('src', 'vermelho2.png');
 			semaforo3 = "vermelho";
 			tempo3 = 5000;} 
 			}}}
@@ -138,22 +140,22 @@ function controle3(){
 
 function controle4(){
 			if (semaforo4 == "verde" ){
-			img4.setAttribute('src', 'amarelo.png');
+			img4.setAttribute('src', 'amarelo2.png');
 			semaforo4 = "amarelo1";
 			tempo4 = 1000;
 			}else{
 			if (semaforo4 == "amarelo1" ){
-			img4.setAttribute('src', 'vermelho.png');
+			img4.setAttribute('src', 'vermelho2.png');
 			semaforo4 = "vermelho";
 			tempo4 = 5000;
 			}	else{
 
 				if (semaforo4 == "vermelho" ){
-			img4.setAttribute('src', 'amarelo.png');
+			img4.setAttribute('src', 'amarelo2.png');
 			semaforo4 = "amarelo2";
 			tempo4 = 1000;
 			}else{if (semaforo4 == "amarelo2" ){
-			img4.setAttribute('src', 'vermelho.png');
+			img4.setAttribute('src', 'vermelho2.png');
 			semaforo4 = "vermelho";
 			tempo4 = 5000;} 
 			}}}
@@ -168,5 +170,4 @@ function controle4(){
 </script>
 
 </body>
-
 </html>
